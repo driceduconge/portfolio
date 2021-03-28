@@ -1,0 +1,77 @@
+:root {
+  --bg:  #00010a;
+  --c1:rgb(255, 0, 255);
+  --c2:rgb(0, 255, 0);
+  --c2:rgb(0, 255, 255);
+
+}
+html{
+  cursor: crosshair;
+  overflow:hidden;
+  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none; /* Safari */
+   -khtml-user-select: none; /* Konqueror HTML */
+     -moz-user-select: none; /* Old versions of Firefox */
+      -ms-user-select: none; /* Internet Explorer/Edge */
+          user-select: none; /* Non-prefixed version, currently
+                                supported by Chrome, Edge, Opera and Firefox */
+  background-color: #00010a;
+}
+.menu{
+  display: inline-flex;
+  height:auto;
+  width:auto;
+  position:absolute;
+  top:1%;
+  left:1%;
+  padding-left:10px;
+  padding-right:10px;
+  padding-top: 6px;
+  padding-bottom: 6px;
+  background-color: var(--c1);
+  font-size: 2.5vh;
+  font-family: 'Space Text Medium';
+  color:#e6e6e6;
+  line-height: 110%;
+}
+
+.box{
+  margin-left: 5px;
+  padding-bottom:7px;
+  padding-left:9px;
+  padding-right:0px;
+  padding-top: 3px;
+  display: inline;
+  line-height: 80%;
+  background-color:#00010a;
+}
+.box a{
+  margin-right: 10px;
+  display: inline-flex;
+  text-decoration: none;
+  color:#e6e6e6;
+}
+.box a:hover{
+  cursor: crosshair;
+  color:var(--c1);
+}
+.liste{
+  position: fixed;
+  top:1%;
+  right: 1%;
+}
+.liste ul{
+  margin:0px;
+  list-style: none;
+}
+.liste ul li{
+  color:#e6e6e6;
+  font-size: 2.5vh;
+  font-family: 'Space Text Medium';
+  text-align: right;
+}
+.liste ul li:hover{
+  color:var(--c1);
+  cursor: pointer;
+  cursor: crosshair;
+}
