@@ -1,12 +1,13 @@
-$('.menu').easyDrag({
-  cursor: 'grab'
+$('.menu,.txt,img,iframe').easyDrag({
+  cursor: 'grab',
 });
 var test=false;
+var id;
 $("li").click(function(){
   if(test){
     $(id).toggle();
   }
-  var id = "."+ $(this).attr('id');
+  id = "."+ $(this).attr('id');
   $(id).toggle();
   test=true;
 });

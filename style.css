@@ -2,12 +2,13 @@
   --bg:  #00010a;
   --c1:rgb(255, 0, 255);
   --c2:rgb(0, 255, 0);
-  --c2:rgb(0, 255, 255);
+  --c3:rgb(0, 255, 255);
 
 }
 html{
   cursor: crosshair;
-  overflow:hidden;
+  overflow-y :hidden;
+  overflow-x: hidden;
   -webkit-touch-callout: none; /* iOS Safari */
   -webkit-user-select: none; /* Safari */
    -khtml-user-select: none; /* Konqueror HTML */
@@ -18,11 +19,13 @@ html{
   background-color: #00010a;
 }
 .menu{
+  z-index: 5;
   display: inline-flex;
   height:auto;
   width:auto;
-  position:absolute;
+  position:sticky;
   top:1%;
+  margin-top: 0;
   left:1%;
   padding-left:10px;
   padding-right:10px;
@@ -57,6 +60,7 @@ html{
 }
 .liste{
   position: fixed;
+  z-index: 2;
   top:1%;
   right: 1%;
 }
@@ -77,18 +81,43 @@ html{
 }
 
 .affichage{
-  position: absolute;
+  z-index: 1;
+  overflow-y :auto;
+  overflow-x: hidden;
+  position: fixed;
   left:1%;
   top:1%;
-  width:85%;
+  width:100%;
   height:98%;
   display: flex;
   flex-wrap: wrap;
 	flex-direction: row;
 }
 .affichage img{
-  max-width: 43%;
+  max-width: 80%;
+  height: auto;
+  border: 2px solid var(--c1);
 }
-.clip,.animation,.lamue,.vin,.pola,.spec,.nuits,.robes,.frutos,.visu,.intense{
+iframe{
+  border: 2px solid var(--c1);
+}
+.video,.animation,.lamue,.vin,.pola,.spec,.nuits,.robes,.frutos,.visu,.intense{
   display:none;
+  max-width: 80%;
+}
+
+.txt{
+  position: absolute;
+  color:#e6e6e6;
+  font-family: 'Space Text';
+  top: 70%;
+  left:65%;
+  width:35%;
+  padding: 1%;
+  height:auto;
+  background-color: #00010a;
+  border: 5px solid var(--c1);
+}
+.txt i{
+  color:var(--c2);
 }
