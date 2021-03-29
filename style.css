@@ -23,9 +23,8 @@ html{
   display: inline-flex;
   height:auto;
   width:auto;
-  position:sticky;
+  position:absolute;
   top:1%;
-  margin-top: 0;
   left:1%;
   padding-left:10px;
   padding-right:10px;
