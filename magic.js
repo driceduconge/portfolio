@@ -1,7 +1,17 @@
 $('.menu').easyDrag({
   cursor: 'grab'
 });
-$('.projets').hover(function() {
+var test=false;
+$("li").click(function(){
+  if(test){
+    $(id).toggle();
+  }
+  var id = "."+ $(this).attr('id');
+  $(id).toggle();
+  test=true;
+});
+//hover fade
+$('.projets,.contact').hover(function() {
   $("#holder").fadeOut(1000);
 }, function() {
   $("#holder").fadeIn(600);
