@@ -115,7 +115,7 @@ iframe{
   padding: 1%;
   height:auto;
   background-color: #00010a;
-  border: 5px solid var(--c1);
+  border: 2px solid var(--c1);
 }
 .txt i{
   color:var(--c2);
